@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+
+*.pyc
+
+data/bronze/*
+data/silver/*
+data/gold/*
+artifacts/
+
+.ipynb_checkpoints/
+.DS_Store

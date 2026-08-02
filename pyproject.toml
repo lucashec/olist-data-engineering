@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "olist-data-engineering"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+dependencies = [
+    "pandas",
+    "pyarrow",
+    "duckdb",
+    "pytest",
+    "python-dotenv"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src"]
